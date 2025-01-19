@@ -28,7 +28,7 @@ function Card({ }) {
                         <FaStopCircle size={20} color='blue' />
                         <FaStopCircle size={20} color='blue' /></div>
                 </div>
-                <div className="xl:px-5 px-3 max-h-12 text-center rounded-lg lg:order-4 order-3 text-white text-[10px]
+                <div className="px-0 w-44 max-h-12 text-center rounded-lg lg:order-4 order-3 text-white text-[10px]
                 place-content-center  " style={{ background: 'linear-gradient(to right,skyblue, blue)' }}>
                     <h1 className=''><GoDownload className='inline' size={10} /> download for 30 credits</h1>
                 </div>
