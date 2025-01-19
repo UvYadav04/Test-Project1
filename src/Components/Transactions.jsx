@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import Card2 from './Card2';
 
@@ -35,11 +37,11 @@ function Transactions() {
     };
 
     return (
-        <div className="min-w-fit max-w-[100vw] flex flex-col gap-20 place-items-center">
-            <h1 className="w-full lg:ps-20 md:ps-16 sm:ps-10 text-start md:text-3xl text-2xl font-bold">
+        <div className="w-full flex flex-col gap-20 place-items-center">
+            <h1 className="flex-1 lg:ps-20 md:ps-16 sm:ps-10 text-start md:text-3xl text-2xl font-bold">
                 Credits Purchase History
             </h1>
-            <table className="md:w-11/12 w-[100vw] overflow-hidden">
+            <table className="md:w-11/12 w-full overflow-hidden">
                 <thead>
                     <tr className="flex font-bold mb-5 justify-evenly max-w-[100vw] overflow-hidden">
                         <td className="min-w-fit w-16 text-center">

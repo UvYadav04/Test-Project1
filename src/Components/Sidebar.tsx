@@ -8,10 +8,9 @@ import { IoLogoBuffer } from "react-icons/io5";
 import { BiLogoCodepen } from "react-icons/bi";
 import { FiMessageSquare } from "react-icons/fi";
 import { MdCancel } from "react-icons/md";
-import { MyContext } from '@/Contexts/Hamburger';
+import { MyContext, useMyContext } from '@/Contexts/Hamburger';
 function Sidebar() {
-    const { ham, setham } = useContext(MyContext)
-    const { selected, setselected } = useContext(MyContext)
+    const { ham, setham, selected, setselected } = useMyContext()
     const [width, setwidth] = useState<number>(1476)
 
     useEffect(() => {
@@ -31,7 +30,7 @@ function Sidebar() {
         };
     }, []);
     return (
-        <div className={width > 900 ? `xl:w-96 lg:w-72 min-[900px]:block w-60 sticky top-0 h-screen` : ham ? `fixed top-0 left-0 w-72 h-screen bg-white` : 'hidden'} >
+        <div className={width > 900 ? `xl:w-96 lg:w-72 w-60 sticky top-0 h-screen` : ham ? `fixed top-0 left-0 w-72 h-screen bg-white` : 'hidden'} >
             <div className="columns  xl:w-2/3 lg:w-4/5 w-11/12 ms-auto flex flex-col justify-start text-slate-400 font-semibold" style={{ height: "inherit" }}>
 
 
